@@ -37,7 +37,8 @@ from __future__ import print_function
 import sys
 import os
 import argparse
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 import numpy as np
 import detect_face
 import cv2
